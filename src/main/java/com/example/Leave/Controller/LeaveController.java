@@ -36,6 +36,7 @@ public class LeaveController {
 	@GetMapping("/")
 	public String home(Model model) {
 		model.addAttribute("LeaveType", leaveTypeRepo.findLeaveType());
+		//model.addAttribute("Desg", designationRepository.findById(id));
 		return "index";
 	}
 
